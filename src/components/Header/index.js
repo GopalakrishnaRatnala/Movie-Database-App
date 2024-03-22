@@ -7,7 +7,7 @@ const Header = () => {
     <nav className="header">
       <div className="headerLeft">
         <Link to="/" style={{textDecoration: 'none'}}>
-          <h1> movieDB</h1>
+          <h1 className="App_title"> movieDB</h1>
         </Link>
         <Link to="/" style={{textDecoration: 'none'}}>
           <span>Popular</span>

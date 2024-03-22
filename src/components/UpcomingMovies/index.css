@@ -18,3 +18,20 @@
   align-items: center;
   height: 100vh;
 }
+.paginationButton {
+  border-radius: 5px;
+  padding: 8px 16px;
+  outline: none;
+  border: none;
+  background-color: #1f3417;
+  color: #f5c518;
+  cursor: pointer;
+  margin: 10px;
+  font-weight: bold;
+}
+.buttonsContainer {
+  align-self: center;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}

@@ -31,3 +31,6 @@ a > span:hover {
 .user__avatar {
   font-size: 2rem;
 }
+.App_title {
+  color: #f5c518;
+}

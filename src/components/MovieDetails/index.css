@@ -1,0 +1,63 @@
+.movieDetailsContainer {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.contentContainer {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.titleAndDateContainer {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+}
+.dateAndTimeContainer {
+  display: flex;
+  align-items: center;
+}
+.ratingAndVoteContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.starAndRatingContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.bothTitleAndRatingsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.posterImg {
+  height: 300px;
+  margin-right: 20px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+.posterAndGenreContainer {
+  display: flex;
+  align-items: flex-start;
+}
+.genreContainer {
+  display: flex;
+  align-items: flex-start;
+  list-style-type: none;
+  padding: 0px;
+}
+.duration {
+  margin-left: 10px;
+}
+.gerneItem {
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}

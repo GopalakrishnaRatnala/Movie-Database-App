@@ -1,14 +1,13 @@
 .movie__list {
-  padding: 0 3rem 3rem 3rem;
+  padding: 20px;
 
   display: flex;
   flex-direction: column;
 }
 
 .list__title {
-  font-size: 1.75rem;
-  margin: 2.5rem;
-  color: #ffffff;
+  font-size: 10px;
+  color: #1f3417;
 }
 
 .list__cards {

@@ -1,36 +1,74 @@
 .header {
-  margin: 0 2.5rem;
-  padding: 0.5rem 0;
-  align-items: center;
   display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
-.headerLeft,
-.headerRight {
+.navigation-container {
   display: flex;
   align-items: center;
 }
 
-a > span {
+span {
   margin: 0 30px;
-  font-size: 1.3rem;
+  font-size: 100%;
   cursor: pointer;
   color: white;
 }
 
-a > span:hover {
+span:hover {
   color: #f5c518;
 }
 
-.header__icon {
-  width: 80px;
+.App_title {
+  color: #f5c518;
+  font-size: 20px;
+}
+.search-element {
+  outline: none;
   cursor: pointer;
+  padding: 5px 10px;
+  margin-right: 2px;
+}
+.search-button {
+  outline: none;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 766px) {
+  span {
+    display: none;
+  }
 }
 
-.user__avatar {
-  font-size: 2rem;
+@media screen and (min-width: 766px) {
+  .moviesMenu {
+    display: none;
+  }
+  .menu-item {
+    display: none;
+  }
 }
-.App_title {
+.moviesMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+  justify-content: space-around;
+}
+.menu-item {
+  cursor: pointer;
+  color: white;
+}
+
+.menu-item:hover {
   color: #f5c518;
 }

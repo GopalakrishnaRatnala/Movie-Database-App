@@ -54,7 +54,7 @@ class UpcomingMovies extends Component {
             <h1 className="list__title">UPCOMING</h1>
             <div className="list__cards">
               {upcomingMovies.map(movie => (
-                <MovieCard movie={movie} />
+                <MovieCard movie={movie} key={movie.id} />
               ))}
             </div>
             <div className="buttonsContainer">

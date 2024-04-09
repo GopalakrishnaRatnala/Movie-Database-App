@@ -2,10 +2,9 @@ import './index.css'
 import {Link} from 'react-router-dom'
 
 const Cards = ({movie}) => {
-  console.log(movie)
+  console.log('')
   return (
     <>
-      (
       <div className="cards">
         <img
           className="cards__img"
@@ -34,7 +33,6 @@ const Cards = ({movie}) => {
           </Link>
         </div>
       </div>
-      )
     </>
   )
 }

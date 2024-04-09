@@ -3,41 +3,23 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 20px;
+  margin: 0px;
+  align-items: center;
 }
 .contentContainer {
-  width: 90vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  padding: 10px;
 }
-.titleAndDateContainer {
+.posterAndDetailsContainer {
   display: flex;
-  flex-direction: column;
-  width: 90vw;
-}
-.dateAndTimeContainer {
-  display: flex;
-  align-items: center;
-}
-.ratingAndVoteContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.starAndRatingContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.bothTitleAndRatingsContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: flex-start;
 }
 .posterImg {
-  height: 300px;
+  height: 200px;
   margin-right: 20px;
   border-radius: 10px;
   border: 1px solid #fff;
@@ -45,19 +27,105 @@
 .posterAndGenreContainer {
   display: flex;
   align-items: flex-start;
+  width: 100%;
 }
 .genreContainer {
   display: flex;
   align-items: flex-start;
   list-style-type: none;
   padding: 0px;
+  flex-wrap: wrap;
 }
 .duration {
-  margin-left: 10px;
+  font-size: 12px;
 }
 .gerneItem {
-  border: 1px solid #fff;
-  padding: 5px 10px;
+  cursor: pointer;
   border-radius: 5px;
-  margin-right: 10px;
+  border-width: 1px;
+  color: #f5c518;
+  background-color: #1f3417;
+  padding: 5px;
+  margin: 2px;
+}
+.movieTitle {
+  font-size: 20px;
+}
+.IMDBHeading {
+  font-size: 14px;
+  text-decoration: underline;
+}
+.backdropImg {
+  width: 100%;
+
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+.backdropImgContainer {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.rating {
+  color: #1f3417;
+  font-size: 12px;
+}
+.releaseDate {
+  font-size: 12px;
+}
+.overviewHeading {
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #1f3417;
+}
+.overview {
+  font-size: 12px;
+}
+.castItemsContainer {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+.castImg {
+  height: 300px;
+}
+.castItem {
+  display: inline-block;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+  cursor: pointer;
+  width: 200px;
+  height: 300px;
+  border: 1px solid rgb(99, 99, 99);
+  z-index: 0;
+  transition: transform 0.2s;
+}
+.castDetailsOverlay {
+  position: absolute;
+  padding: 10px;
+  bottom: 0px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  justify-content: flex-end;
+  background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 1));
+  opacity: 0;
+  transition: opacity 0.2s;
+  opacity: 1;
+}
+@media (max-width: 766px) {
+  .castItem {
+    height: 250px;
+    width: 180px;
+  }
 }

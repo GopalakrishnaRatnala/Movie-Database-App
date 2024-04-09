@@ -54,7 +54,7 @@ class TopRatedMovies extends Component {
             <h1 className="list__title">TOP RATED</h1>
             <div className="list__cards">
               {topRatedMovies.map(movie => (
-                <MovieCard movie={movie} />
+                <MovieCard movie={movie} key={movie.id} />
               ))}
             </div>
             <div className="buttonsContainer">

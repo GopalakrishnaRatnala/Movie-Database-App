@@ -44,7 +44,7 @@ class PopularMovies extends Component {
     const {popularMovies, isLoading, pageNo} = this.state
 
     return (
-      <>
+      <div>
         {isLoading ? (
           <div className="loader-container">
             <Loader type="ThreeDots" color="#fff" height="50" width="50" />
@@ -54,7 +54,7 @@ class PopularMovies extends Component {
             <h1 className="list__title">POPULAR</h1>
             <div className="list__cards">
               {popularMovies.map(movie => (
-                <MovieCard movie={movie} />
+                <MovieCard movie={movie} key={movie.id} />
               ))}
             </div>
             <div className="buttonsContainer">
@@ -76,7 +76,7 @@ class PopularMovies extends Component {
             </div>
           </div>
         )}
-      </>
+      </div>
     )
   }
 }
